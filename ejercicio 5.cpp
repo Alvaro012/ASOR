@@ -9,7 +9,7 @@
 using namespace std;
 
 int main(){
-	int j=open("home/cursoredes/direct",O_CREAT,S_IRUSR|S_IWUSR|S_IRGRP|S_IROTH|S_IXOTH);
+	open("home/cursoredes/direct",O_CREAT,S_IRUSR|S_IWUSR|S_IRGRP|S_IROTH|S_IXOTH);
         int i= system("ls direct");
         return 1;
 }
