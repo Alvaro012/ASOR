@@ -8,7 +8,7 @@
 using namespace std;
 
 int main(){
-	chmod("home/cursoredes/directorio",S_IRUSR| S_IWUSR|S_IRGRP| S_IWGRP| S$
+	chmod("home/cursoredes/directorio",S_IRUSR| S_IWUSR|S_IRGRP| S_IWGRP| S_IROTH|S_IWOTH);
         return 1;
 }
 
