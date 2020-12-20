@@ -1,0 +1,22 @@
+#include <sys/types.h>
+#include <unistd.h>
+#include <sys/utsname.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <time.h>
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	int file_desc = open("dup.txt", O_WRONLY | O_APPEND);
+        dup2(file_desc,1);
+        cout<<"Esto se verá en dup.txt"<<endl;
+        cout<<"Esto también"<<endl;
+ return 1;
+
+}
+
+
