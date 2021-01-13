@@ -12,9 +12,9 @@ using namespace std;
 
 int main(){
 	struct sched_param param;
-        //int c= system("man chrt");
-        //int n= system("man nice");
-        //int r=system("man renice");
+        int c= system("man chrt");
+        int n= system("man nice");
+        int r=system("man renice");
 
         int nice_antes= getpriority(PRIO_PROCESS,0);
         cout<<"Nice antes: "<< nice_antes<<endl;
