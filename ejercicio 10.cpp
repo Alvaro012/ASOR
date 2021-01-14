@@ -15,6 +15,6 @@ int main(){
         pid=fork();
         cout<<getpid()<<endl;
         sleep(600);
-        cout<<"El proceso responde a las llamadas de kill desde la otra terminal. P.ej, se termina si ejecuto :kill 'pid' 3"<<endl; 
+        cout<<"El proceso responde a las llamadas de kill desde la otra terminal. P.ej, se termina si ejecuto :kill 'pid' 3. Y además no muestra el cout después del sleep(600)"<<endl; 
         return 0;
 }
