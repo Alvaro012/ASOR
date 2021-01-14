@@ -19,7 +19,7 @@ int main(){
                case -1:
                 perror("Fork");
                 exit(1);
-
+		break;
                case 0:
                 //sleep(3);
                 cout<<"Hijo"<<endl;
