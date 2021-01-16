@@ -20,7 +20,7 @@ using namespace std;
 
 int main(int argc, char *argv[]){
         int status;
-        status=mkfifo("/root/fifo.txt",S_IWUSR | S_IRUSR);
+        status=mkfifo("/root/fifo.txt",S_IRWXU | S_IRWXG | S_IROTH);
         int stat=system("stat fifo.txt");
         return 0;
 }
