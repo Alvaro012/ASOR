@@ -42,7 +42,7 @@ int main(int argc, char *argv[]){
 
                 c = recvfrom(sd,buf,80,0,(struct sockaddr *) &addr,&addrlen);
                 buf[c] = '\0';
-                getnameinfo((struct sockaddr *) &addr,addrlen,host,NI_MAXHOST,serv,NI_MAXSERV,NI_NUMER$
+                getnameinfo((struct sockaddr *) &addr,addrlen,host,NI_MAXHOST,serv,NI_MAXSERV,NI_NUMERICHOST|NI_NUMERICSERV);
                 cout<<"Host: "<<host<<"Server: "<<serv<<"Buf: "<<buf<<endl;
                 sendto(sd,buf,c,0,(struct sockaddr *) &addr,addrlen);
         }
